@@ -1,0 +1,75 @@
+html {
+  font-size: 10px;
+  background-color: rgb(74, 65, 98);
+  background-size: cover;
+  cursor: url('https://fav.farm/🥁') 13 0, auto;
+
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Lucida Console", "Courier New", monospace;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size:80px;
+
+}
+.githublink {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid rgb(11, 37, 86);
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(226, 218, 210, 0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+
+  transform: scale(1.1);
+  border-color: rgb(18, 67, 158);
+  box-shadow: 0 0 1rem rgb(11, 37, 86); 
+  background-color: rgb(209, 207, 208); 
+  opacity: 0.5; 
+
+  
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  color: #ffffff;
+}
