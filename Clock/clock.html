@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="clockstyle.css">
+</head>
+<body>
+    <a class="githublink" href="https://github.com/so647/JavaScriptProjects" style="text-decoration: none; color: white; font-size: 16px; font-family: Lucida Console, Courier New, monospace;"
+    >
+      <img src="githublogo.png" alt="GitHub Profile" style="width: 30px; height: 30px; margin-right: 5px;" />
+         More JavaScript Projects...
+    </a>
+    <div class= "container">
+        <div class= "box">
+            <div class= "clock">
+                <div class="hour">
+                    <div class="hr" id="hr"></div>
+                </div>
+
+                <div class="min">
+                    <div class="mn" id="mn"></div>
+                </div>
+
+                <div class="sec">
+                    <div class="sc" id="sc"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        const deg = 6;
+        const [hr, mn, sc] = [document.querySelector("#hr"), document.querySelector("#mn"), document.querySelector("#sc")];
+        setInterval(() => {
+        let day = new Date();
+        let hours = day.getHours() *deg*5;
+        let minutes = day.getMinutes() *deg;
+        let seconds = day.getSeconds() *deg;
+
+        hr.style.transform = `rotateZ(${hours+minutes/12}deg)`
+        mn.style.transform = `rotateZ(${minutes}deg)`;
+        sc.style.transform = `rotateZ(${seconds}deg)`;
+    }, 1000);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
