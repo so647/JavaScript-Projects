@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: "Lucida Console", "Courier New", monospace;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    font-size: 10px;
+    background-color: rgb(30, 17, 66);
+    background-size: cover;
+}
+
+h1 { 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    color: white;
+    font-size:80px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    color: white;
+    font-size:20px;
+}
+
+#icons img {
+    width: 200px;
+    height: 200px;
+}
+
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+#icons img:hover{
+    transform: scale(1.1);
+}
+
+.displayed{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 900px;
+    height:100px;
+    border-radius:40px;
+    margin:0 auto;
+    flex-direction: column;
+
+}
+.winOrLose{
+    font-size: 25px;
+}
+
+.win{
+    background-color: rgb(100, 224, 160);
+}
+
+.lose{
+    background-color: rgb(239, 62, 62);
+}
+
+#currentScore{
+    padding:6px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#chosenIcon{
+    padding:5px;
+    font-size: 20px;
+    color:rgb(137, 102, 139);
+}
+
+.final{
+    font-size: 20px;
+}
+
+#finalScore{
+    font-size:20px;
+}
+
+#finalWinner{
+    font-size:20px;
+    font-weight: bold;
+    background-color: rgb(135, 245, 135);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    align-self: flex-end;
+}
