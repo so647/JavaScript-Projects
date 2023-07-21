@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    color: black;
+    font-size: 30px;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(144, 143, 137, 0.201);
+    
+}
+
+
+
+.container{
+    background-color: rgb(46, 46, 65);
+    width:400px;
+    height:700px;
+    border-radius: 5%;
+    
+}
+
+
+.row-1,.row-2, .row-3,.row-3,.row-4,.row-5{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    background-color: rgb(46, 46, 65);  
+}
+
+#screen{
+    display:flex;
+    justify-content: right;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 306px;
+    height: 90px;
+    background-color: rgb(159, 159, 181);
+    margin: 50px auto;
+    font-size:40px;
+}
+
+#clear {
+    display:flex;
+    width: 306px;
+    height: 35px;
+    background-color: rgb(141, 141, 199);
+    border-radius: 20px;
+    justify-content: center;
+    margin: 6px;
+
+
+}
+
+#mult,#add,#divi,#sub,#zero,#equal, #fullstop, #one, #two, #three, #four, #five, #six, 
+#seven, #eight, #nine{
+    display: flex;
+    width: 60px;
+    height: 70px;
+    font-size: 30px;
+    align-items: center;
+    border-radius: 20%;
+    justify-content:space-evenly;
+    margin: 11px;
+    background-color: rgb(141, 141, 199);
+
+}
+
+#mult,#add,#divi,#sub,#equal{
+    background-color: rgb(104, 104, 150);
+
+}
+button {
+border:none;
+}
+#buttons {
+transition-duration: 0.4s;
+}
+#buttons button:hover {
+background-color: rgb(83, 83, 113);
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    align-self: flex-end;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
